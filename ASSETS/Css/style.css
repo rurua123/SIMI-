@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* default styles */
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+}
+h2 {
+  font-size: 36px;
+}
+
+div.title h2:after {
+  background-color: #0c7f48;
+  content: "";
+  display: block;
+  height: 1px;
+  margin: 20px auto 10px;
+  width: 140px;
+}
+
+/* text colors */
+.text-green {
+  color: #0da617 !important;
+}
+.text-red {
+  color: red !important;
+}
+
+/* background colors */
+.bg-gray {
+  background-color: #404040;
+}
+.bg-green {
+  background-color: rgb(12, 127, 72);
+}
+
+/* navbar styles */
+.logo {
+  width: 10%;
+}
+/* dropdown styles */
+.dropdown {
+  transition-duration: 5s !important;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  background-color: #404040;
+}
+.nav-link {
+  border-top: 1px solid transparent;
+  color: white;
+}
+.nav-item:hover .nav-link {
+  border-top: 1px solid #4abfd9;
+}
+.dropdown-toggle::after {
+  content: none;
+}
+.dropdown-item:hover {
+  background-color: #4abfd980;
+}
+/* end of navbar style */
+
+/* header video styles */
+
+.headerVideo,
+.headerVideo video {
+  width: 100%;
+  height: 100vh;
+}
+/* end of header styles */
+
+/* aboutUs styles */
+
+.liImg {
+  list-style-image: url("../Images/aboutUs/ulpng.png");
+}
+.aboutUsCard {
+  min-height: 405px;
+}
+/* end of about us styles */
+
+/* Our Service Styles */
+
+.image {
+  overflow: hidden;
+  position: relative;
+}
+
+.cb {
+  background-color: rgba(12, 127, 72, 0.8) !important;
+  border-radius: 20px;
+  left: 5%;
+  padding-block: 10px;
+  position: relative;
+  width: 90%;
+  text-align: center;
+  color: #fff;
+  align-self: flex-start;
+  transform: translateY(-40%);
+}
+
+/* end of Our Service Styles */
+
+/* Our Projects Styles */
+
+.cardHover:hover .card-img-overlay {
+  visibility: visible;
+  opacity: 100%;
+}
+.cb {
+  background-color: rgba(12, 127, 72, 0.8) !important;
+  border-radius: 20px;
+  left: 5%;
+  padding-block: 10px;
+  position: relative;
+  width: 90%;
+  text-align: center;
+  color: #fff;
+  align-self: flex-start;
+  transform: translateY(-40%);
+}
+
+.card-img-overlay {
+  background: rgba(12, 127, 72, 0.8) none repeat scroll 0 0;
+  opacity: 0;
+  transition: all 0.35s ease-out 0s;
+  visibility: hidden;
+  z-index: 2;
+  text-align: center;
+  color: #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* end of Our Projects Styles */
+
+/* Overview heading */
+.cover {
+  background-image: url("../Images/overview-banner.jpg");
+  height: 60vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 60vh;
+  /* object-fit: cover; */
+  position: relative;
+}
+.text {
+  position: absolute;
+  width: 100%;
+  height: 60vh;
+}
+.text-child {
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* end of Overview heading styles */
+
+/* green trinagle styles */
+.beforeTriangle {
+  height: 35px;
+  background-color: #0c7f48;
+}
+/* end of green trinagle styles */
+
+/* Iso certificates section styles */
+
+.certificates {
+  background-image: url("../Images/certificates-img.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 50vh;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  /* background-attachment: fixed; */
+}
+.certificatesContent {
+  width: 100%;
+  height: 50vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* end of Iso certificates section styles */
+
+/* key clients' styles */
+.clientImg {
+  width: 180px;
+  height: 70px;
+  object-fit: contain;
+}
+/* end og key clients' styles */
+
+/* footer styles */
+footer li,
+a {
+  color: white;
+}
+footer h4 {
+  color: #4abfd9;
+}
+li a {
+  color: white !important;
+}
+footer ul li a:hover {
+  color: #4abfd9 !important;
+}
+/* end of footer styles */
+
+/* scroll btn */
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 99999;
+  display: none;
+}
+/* end of scroll btn */
+
+/* Contact style */
+
+.contactCover {
+  background-image: url("../Images/follow-img.jpg");
+  height: 60vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 60vh;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.goLinks {
+  position: relative;
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+}
+
+.rectangel {
+  padding: 30px;
+  position: absolute;
+  /* border: 1px solid black; */
+  background-color: red;
+  rotate: z 44deg;
+}
+/* end of Contact style */
